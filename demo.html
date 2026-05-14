@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPT 抽屉式演示</title>
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+  <!-- ░░ SLIDES ░░ -->
+  <div class="slide s1 active" data-i="0">
+    <div class="slide-grid"></div>
+    <span class="slide-num">01 — 04</span>
+    <div class="slide-content">
+      <span class="tag">概念起点</span>
+      <h1>探索<em>未知</em><br>的边界</h1>
+      <p class="sub">PPT抽屉式网页将演示的叙事节奏与网页的交互深度完美融合——全屏切换，侧边抽屉，每一屏都是一个完整世界。</p>
+      <button class="cta js-open-drawer">展开详情 ›</button>
+    </div>
+    <div class="deco"></div>
+  </div>
+
+  <div class="slide s2" data-i="1">
+    <div class="slide-grid"></div>
+    <span class="slide-num">02 — 04</span>
+    <div class="slide-content">
+      <span class="tag">设计哲学</span>
+      <h1>以<em>设计</em><br>驱动体验</h1>
+      <p class="sub">每一像素都经过推敲。暗底强调色方案、几何装饰、衬线标题——视觉层次清晰，信息密度精准控制。</p>
+      <button class="cta js-open-drawer">展开详情 ›</button>
+    </div>
+    <div class="deco"></div>
+  </div>
+
+  <div class="slide s3" data-i="2">
+    <div class="slide-grid"></div>
+    <span class="slide-num">03 — 04</span>
+    <div class="slide-content">
+      <span class="tag">技术实现</span>
+      <h1>纯粹<em>代码</em><br>之美学</h1>
+      <p class="sub">零依赖。原生 HTML · CSS · JavaScript，CSS transform 高性能动画，will-change 浏览器优化，防抖滚轮事件。</p>
+      <button class="cta js-open-drawer">展开详情 ›</button>
+    </div>
+    <div class="deco"></div>
+  </div>
+
+  <div class="slide s4" data-i="3">
+    <div class="slide-grid"></div>
+    <span class="slide-num">04 — 04</span>
+    <div class="slide-content">
+      <span class="tag">下一步</span>
+      <h1>开始你的<br><em>旅程</em></h1>
+      <p class="sub">这是起点，不是终点。你可以在此基础上构建产品展示、作品集、品牌故事——任何需要逐层深入的内容系统。</p>
+      <button class="cta js-open-drawer">展开详情 ›</button>
+    </div>
+    <div class="deco"></div>
+  </div>
+
+
+  <!-- ░░ LEFT NAV RAIL ░░ -->
+  <nav class="nav-rail" id="navRail">
+
+    <div class="nav-item ni0 on" data-i="0">
+      <div class="ni-preview">
+        <div class="ni-grid"></div>
+        <div class="ni-orb"></div>
+        <div class="ni-orb2"></div>
+        <div class="ni-content">
+          <span class="ni-eyebrow">概念起点</span>
+          <span class="ni-heading">探索未知的边界</span>
+          <span class="ni-slide-n">01 — 04</span>
+        </div>
+      </div>
+      <div class="ni-tab">
+        <span class="ni-tab-n">01</span>
+        <span class="ni-tab-t">探索边界</span>
+      </div>
+    </div>
+
+    <div class="nav-item ni1" data-i="1">
+      <div class="ni-preview">
+        <div class="ni-grid"></div>
+        <div class="ni-orb"></div>
+        <div class="ni-orb2"></div>
+        <div class="ni-content">
+          <span class="ni-eyebrow">设计哲学</span>
+          <span class="ni-heading">以设计驱动体验</span>
+          <span class="ni-slide-n">02 — 04</span>
+        </div>
+      </div>
+      <div class="ni-tab">
+        <span class="ni-tab-n">02</span>
+        <span class="ni-tab-t">设计驱动</span>
+      </div>
+    </div>
+
+    <div class="nav-item ni2" data-i="2">
+      <div class="ni-preview">
+        <div class="ni-grid"></div>
+        <div class="ni-orb"></div>
+        <div class="ni-orb2"></div>
+        <div class="ni-content">
+          <span class="ni-eyebrow">技术实现</span>
+          <span class="ni-heading">纯粹代码之美学</span>
+          <span class="ni-slide-n">03 — 04</span>
+        </div>
+      </div>
+      <div class="ni-tab">
+        <span class="ni-tab-n">03</span>
+        <span class="ni-tab-t">代码之美</span>
+      </div>
+    </div>
+
+    <div class="nav-item ni3" data-i="3">
+      <div class="ni-preview">
+        <div class="ni-grid"></div>
+        <div class="ni-orb"></div>
+        <div class="ni-orb2"></div>
+        <div class="ni-content">
+          <span class="ni-eyebrow">下一步</span>
+          <span class="ni-heading">开始你的旅程</span>
+          <span class="ni-slide-n">04 — 04</span>
+        </div>
+      </div>
+      <div class="ni-tab">
+        <span class="ni-tab-n">04</span>
+        <span class="ni-tab-t">开始旅程</span>
+      </div>
+    </div>
+
+  </nav>
+
+
+  <!-- ░░ BOTTOM PAGER ░░ -->
+  <div class="pager" id="pager">
+    <div class="page-seg on" data-i="0"></div>
+    <div class="page-seg"    data-i="1"></div>
+    <div class="page-seg"    data-i="2"></div>
+    <div class="page-seg"    data-i="3"></div>
+  </div>
+
+  <!-- ░░ KEYBOARD HINT ░░ -->
+  <div class="hint">↑ ↓ 切换 · ESC 关闭</div>
+
+  <!-- ░░ DRAWER TOGGLE ░░ -->
+  <button class="toggle" id="toggle" aria-label="展开详情">
+    <span class="toggle-arr">›</span>
+    <span class="toggle-lbl">详情</span>
+  </button>
+
+  <!-- ░░ RIGHT DRAWER ░░ -->
+  <div class="drawer" id="drawer">
+    <div class="d-progress"><div class="d-bar" id="dbar"></div></div>
+
+    <div class="panel on" id="p0">
+      <div class="d-eyebrow">屏幕 01 · 概览</div>
+      <div class="d-title">探索未知的边界</div>
+      <div class="d-rule rule-s1"></div>
+      <p class="d-body">PPT抽屉式设计将演示文稿的叙事结构与网页交互能力融合。每一屏是完整信息单元，抽屉承载更深层内容——用户按预设节奏探索，不被信息量淹没。<br><br>这种模式特别适合产品介绍、品牌展示、作品集等需要逐步引导的场景。</p>
+      <div class="d-grid">
+        <div class="d-card"><div class="d-val color-s1">4</div><div class="d-lbl">屏幕数量</div></div>
+        <div class="d-card"><div class="d-val color-s1">0</div><div class="d-lbl">外部依赖</div></div>
+      </div>
+      <ul class="d-list">
+        <li>全屏翻页交互体验</li>
+        <li>侧边抽屉深度内容</li>
+        <li>键盘 ↑↓ 导航支持</li>
+        <li>触控滑动支持</li>
+      </ul>
+    </div>
+
+    <div class="panel" id="p1">
+      <div class="d-eyebrow">屏幕 02 · 设计</div>
+      <div class="d-title">以设计驱动体验</div>
+      <div class="d-rule rule-s2"></div>
+      <p class="d-body">暗色基调配合高饱和强调色，形成强烈视觉对比。每屏专属色系建立记忆锚点。几何球形背景增加空间层次，而不干扰主体内容的可读性。<br><br>衬线字体用于标题彰显格调，无衬线字体用于正文保证阅读效率——混排层次分明。</p>
+      <div class="d-grid">
+        <div class="d-card"><div class="d-val color-s2">4</div><div class="d-lbl">配色主题</div></div>
+        <div class="d-card"><div class="d-val color-s2">60fps</div><div class="d-lbl">动画帧率</div></div>
+      </div>
+      <ul class="d-list">
+        <li>Georgia 衬线字体排版</li>
+        <li>CSS cubic-bezier 缓动</li>
+        <li>毛玻璃抽屉面板</li>
+        <li>网格纹理背景层</li>
+      </ul>
+    </div>
+
+    <div class="panel" id="p2">
+      <div class="d-eyebrow">屏幕 03 · 技术</div>
+      <div class="d-title">纯粹代码之美学</div>
+      <div class="d-rule rule-s3"></div>
+      <p class="d-body">整个演示用原生三件套实现，不依赖任何框架。CSS transform 实现 GPU 加速位移，will-change 提前通知浏览器优化。<br><br>滚轮防抖避免快速滚动跳页，touch 事件支持移动端，键盘导航符合无障碍习惯。</p>
+      <div class="d-grid">
+        <div class="d-card"><div class="d-val color-s3">&lt;8kb</div><div class="d-lbl">文件大小</div></div>
+        <div class="d-card"><div class="d-val color-s3">CSS3</div><div class="d-lbl">动画引擎</div></div>
+      </div>
+      <ul class="d-list">
+        <li>transform: translateY 位移动画</li>
+        <li>backdrop-filter 毛玻璃效果</li>
+        <li>will-change 渲染优化</li>
+        <li>防抖滚轮 + 触控事件</li>
+      </ul>
+    </div>
+
+    <div class="panel" id="p3">
+      <div class="d-eyebrow">屏幕 04 · 展望</div>
+      <div class="d-title">开始你的旅程</div>
+      <div class="d-rule rule-s4"></div>
+      <p class="d-body">这个 demo 是框架，内容是你的。可以接入真实数据、增加媒体元素、添加更多屏幕。PPT抽屉核心逻辑很简单：主屏讲一件事，细节藏在抽屉里。<br><br>简单的结构，无限的可能。</p>
+      <div class="d-grid">
+        <div class="d-card"><div class="d-val color-s4">∞</div><div class="d-lbl">扩展可能</div></div>
+        <div class="d-card"><div class="d-val color-s4">MIT</div><div class="d-lbl">开源协议</div></div>
+      </div>
+      <ul class="d-list">
+        <li>接入 CMS 动态数据源</li>
+        <li>添加视频 / 3D 背景</li>
+        <li>嵌套多级抽屉结构</li>
+        <li>水平 + 垂直混合切换</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="demo.js"></script>
+</body>
+</html>
